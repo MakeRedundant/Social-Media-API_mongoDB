@@ -9,11 +9,6 @@
     "es2017": true
     // "es2018": true
   },
-    "extends": "standard",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
     "rules": {
     "no-duplicate-case": "error",
     "no-empty": "error",
@@ -40,3 +35,8 @@
     "radix": "off"
     }
 }
+//so quick summary for eslint 
+ //npm install eslint 
+ //npm init @eslint/config answer some questions 
+ //npx  eslint file.js
+ //npx eslint file.js --fix (to fix the thing)
