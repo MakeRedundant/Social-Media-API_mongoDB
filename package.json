@@ -1,0 +1,20 @@
+{
+  "name": "social-media-api_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakeRedundant/Social-Media-API_mongoDB.git"
+  },
+  "author": "Brian Trang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MakeRedundant/Social-Media-API_mongoDB/issues"
+  },
+  "homepage": "https://github.com/MakeRedundant/Social-Media-API_mongoDB#readme"
+}
