@@ -40,3 +40,4 @@
  //npm init @eslint/config answer some questions 
  //npx  eslint file.js
  //npx eslint file.js --fix (to fix the thing)
+ //npx eslint 
