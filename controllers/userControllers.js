@@ -132,7 +132,7 @@ const userController = {
           .json({ message: 'Error! No user found with this id!' });
       }
       // Delete thoughts associated with the user
-      await Thought.deleteMany({ _id: { $in: userData.thoughts } });
+      await Thought.deleteMany({ _id: { $in: userData.thoughts } }); //Mongoose method that removes multiple documents from a collection that match the specified condition.
       res.json({ message: 'Success! User has been deleted.' });
     } catch (err) {
       res.status(400).json(err);
