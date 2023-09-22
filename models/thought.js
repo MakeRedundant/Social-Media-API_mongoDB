@@ -39,7 +39,10 @@ const ThoughtSchema = new Schema(
   }
 );
 
-thoughtSchema.virtual('reactionCount').get(function () {
+//This mongoose method defines a virtual property called reaction count that you
+//can acess on the doco but not stored in the db, they are created from other fields
+
+thoughtSchema.virtual('reactionsCounter').get(function () {
   return this.reactions.length;
 });
 
