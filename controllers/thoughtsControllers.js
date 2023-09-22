@@ -29,7 +29,7 @@ const thoughtController = {
     }
   },
 
-  // add thought to user
+  // Adds thought to user
   async addThought({ params, body }, res) {
     console.log(body);
     try {
@@ -37,7 +37,7 @@ const thoughtController = {
       const { _id } = createdThought;
       const UserData = await User.findOneAndUpdate(
         { _id: params.userId },
-        { $push: { thoughts: _id } },
+        { $push: { thoughts: _id } }, //push operator by Mongoose
         { new: true }
       );
       if (!UserData) {
@@ -50,7 +50,7 @@ const thoughtController = {
     }
   },
 
-  // update thought by id
+  // Update thought by id
   async updateThought({ params, body }, res) {
     try {
       const ThoughtData = await Thought.findOneAndUpdate(
@@ -68,8 +68,8 @@ const thoughtController = {
     }
   },
 
-  // Remove thought by id
-  async removeThought({ params }, res) {
+  // Removes thought by id
+  async removeThoughtByID({ params }, res) {
     try {
       const deletedThought = await Thought.findOneAndDelete({ _id: params.thoughtId });
       if (!deletedThought) {
@@ -77,7 +77,7 @@ const thoughtController = {
       }
       const UserData = await User.findOneAndUpdate(
         { _id: params.userId },
-        { $pull: { thoughts: params.thoughtId } }, 
+        { $pull: { thoughts: params.thoughtId } },
         { new: true }
       );
       if (!UserData) {
@@ -107,8 +107,8 @@ const thoughtController = {
     }
   },
 
-  // removes reaction
-  async removeReaction({ params }, res) {
+  // Removes reaction by ID
+  async removeReactionByID({ params }, res) {
     console.log(params.thoughtId, params.reactionId);
     try {
       const UserData = await Thought.findOneAndUpdate(

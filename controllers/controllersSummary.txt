@@ -1,0 +1,45 @@
+These are some of the common operators in Mongoose. 
+Query Operators:
+
+Comparison Operators:
+
+$eq: Matches values that are equal to a specified value.
+$ne: Matches values that are not equal to a specified value.
+$gt: Matches values that are greater than a specified value.
+$lt: Matches values that are less than a specified value.
+$gte: Matches values that are greater than or equal to a specified value.
+$lte: Matches values that are less than or equal to a specified value.
+Logical Operators:
+
+$and: Joins query clauses with a logical AND.
+$or: Joins query clauses with a logical OR.
+$not: Inverts the effect of a query expression.
+$nor: Joins query clauses with a logical NOR.
+Element Operators:
+
+$exists: Matches documents that have a specified field.
+$type: Selects documents if a field is of the specified type.
+Array Operators:
+
+$in: Matches any of the values specified in an array.
+$nin: Matches none of the values specified in an array.
+$all: Matches arrays that contain all elements specified in an array.
+Regex Operators:
+
+$regex: Selects documents where the field matches a regular expression pattern.
+Update Operators:
+
+Field Update Operators:
+
+$set: Sets the value of a field in a document.
+$unset: Removes the specified field from a document.
+$inc: Increments the value of a field by a specified amount.
+Array Update Operators:
+
+$push: Adds an element to an array.
+$pop: Removes the first or last element of an array.
+$pull: Removes all instances of a value from an array.
+$addToSet: Adds an element to an array only if it doesn't already exist.
+Bitwise Update Operators:
+
+$bit: Performs bitwise AND, OR, or XOR updates on integer values.
