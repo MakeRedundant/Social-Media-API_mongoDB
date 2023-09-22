@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(routes);
 
-// Use this to log mongo queries being executed!
+//  This will log mongoDB queries being currently executed!
 mongoose.set('debug', true);
 
 db.once('open', () => {
