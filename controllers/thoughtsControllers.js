@@ -77,7 +77,7 @@ const thoughtController = {
       }
       const UserData = await User.findOneAndUpdate(
         { _id: params.userId },
-        { $pull: { thoughts: params.thoughtId } },
+        { $pull: { thoughts: params.thoughtId } }, 
         { new: true }
       );
       if (!UserData) {
@@ -113,7 +113,7 @@ const thoughtController = {
     try {
       const UserData = await Thought.findOneAndUpdate(
         { _id: params.thoughtId },
-        { $pull: { reactions: { reactionId: params.reactionId } } },
+        { $pull: { reactions: { reactionId: params.reactionId } } }, //pull operator to remove an element from the reactions array
         { runValidators: true, new: true }
       );
       res.json(UserData);

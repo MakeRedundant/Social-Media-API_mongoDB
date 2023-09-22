@@ -197,8 +197,8 @@ const userController = {
       .catch((err) => res.status(400).json(err));
   },
   */
-  // Remove friend
-  async removeFriend({ params }, res) {
+  // Removes friend
+  async deleteFriend({ params }, res) {
     try {
       const UserData = await User.findOneAndUpdate(
         { _id: params.id },
