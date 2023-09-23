@@ -29,7 +29,7 @@ This is the API for a social media web application where users can share their t
 - [Tests](#%EF%B8%8FTests)
 - [Questions](#Questions)
     
-## 🖥️ Installation 
+## 🖥️Installation 
 
 To verify the API routes on your local machine clone the code and run 
 
@@ -43,11 +43,11 @@ run Nodemon (if any changes to the backend is made)
 
 and finally utilise insomnia to test API routes that are creating endpoints  
 that respond to HTTP requests (GET, POST, PUT, DELETE).
-## 💬 Usage 
+## 💬Usage 
 Users can tests API routes which are defined with Express.js, where we are creating endpoints that respond  
 to HTTP requests. These routes can handle various HTTP methods such as GET, POST, PUT, DELETE, etc.,  
 
-## 🖼️ Screenshot
+## 🖼️Screenshot
 
 Gif of Users    
 GET:Getting All users, GET:Get a user by ID, Post: Creating a new User, PUT: Updating a user, DEL:Deleting a user 
@@ -64,17 +64,17 @@ GET:Getting All Thoughts, GET:Get a Thought by ID, Post: Creating a new Thought,
 Gif of Reactions
 POST: Adding a new Reaction DELETE: Deleting a Reaction
 ![Reaction](./assets/Social_media-Reactions.gif)
-## 📹 Video
+## 📹Video
 Screencastify
 https://drive.google.com/file/d/1FKsgyWlPHvYjYHFZUZ6PVK3tK24dioa2/view 
-## ⚖️ License 
+## ⚖️License 
 This project is licensed under MIT
   
-## 🤝 Contributing 
+## 🤝Contributing 
 Brian Trang
 With thanks to USYD
   
-## 🛠️ Tests
+## 🛠️Tests
 N/A
  
 ## ❔Questions
