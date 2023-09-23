@@ -31,15 +31,15 @@ This is the API for a social media web application where users can share their t
     
 ## 🖥️ Installation 
 
-To verify the code on your local machine clone the code and run 
+To verify the API routes on your local machine clone the code and run 
 
-`npm install`
+```npm install```
 
 to install the dependencies 
 
 run Nodemon (if any changes to the backend is made)
 
-`npx nodemon`
+```npx nodemon```
 
 and finally utilise insomnia to test API routes that are creating endpoints  
 that respond to HTTP requests (GET, POST, PUT, DELETE).
@@ -77,5 +77,5 @@ With thanks to USYD
 ## 🛠️ Tests
 N/A
  
-## ❔ Questions
+## ❔Questions
 If you have any questions about this project, please contact me directly at brian.trang9@gmail.com. Feel free to view more of my projects at https://github.com/MakeRedundant.
