@@ -49,19 +49,19 @@ to HTTP requests. These routes can handle various HTTP methods such as GET, POST
 
 ## 🖼️Screenshot
 
-Gif of Users    
+Gif of Users      
 GET:Getting All users, GET:Get a user by ID, Post: Creating a new User, PUT: Updating a user, DEL:Deleting a user 
 ![User](./assets/Social_media-User.gif)
 
-Gif of Friends
+Gif of Friends  
 POST: Adding a new friend DELETE: Deleting a friend
 ![Friend](./assets/Social_media-Friend.gif)
 
-Gif of Thoughts
+Gif of Thoughts  
 GET:Getting All Thoughts, GET:Get a Thought by ID, Post: Creating a new Thought, PUT: Updating a Thought, DEL:Deleting a Thought
 ![Thought](./assets/Social_media-Thoughts.gif)
 
-Gif of Reactions
+Gif of Reactions  
 POST: Adding a new Reaction DELETE: Deleting a Reaction
 ![Reaction](./assets/Social_media-Reactions.gif)
 ## 📹Video
