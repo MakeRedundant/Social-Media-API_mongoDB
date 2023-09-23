@@ -132,7 +132,7 @@ const userController = {
           .json({ message: 'Error! No user found with this id!' });
       }
       // Delete thoughts associated with the user
-      await Thought.deleteMany({ _id: { $in: userData.thoughts } }); //Mongoose method that removes multiple documents from a collection that match the specified condition.
+      await Thought.deleteMany({ _id: { $in: UserData.thoughts } }); //Mongoose method that removes multiple documents from a collection that match the specified condition.
       res.json({ message: 'Success! User has been deleted.' });
     } catch (err) {
       res.status(400).json(err);
@@ -206,15 +206,15 @@ const userController = {
         { runValidators: true }
       );
       if (!UserData) {
-        return res
-          .status(404)
-          .json({ message: 'Error! No user found with this id!' });
+        return res.status(404).json({ message: 'Error! No user found with this id!' });
       }
-      res.json(UserData);
+      // If the friend was successfully removed, send a 200 status with a success message.
+      res.status(200).json({ message: 'Success! This friend was removed.' });
     } catch (err) {
       res.status(400).json(err);
     }
   },
+
   /*
   // remove friend
   removeFriend({ params }, res) {

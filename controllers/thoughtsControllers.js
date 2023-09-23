@@ -1,4 +1,4 @@
-const { Thought } = require('../models/thought');
+const { Thought } = require('../models/');
 const User = require('../models/user');
 
 
@@ -81,14 +81,15 @@ const thoughtController = {
         { new: true }
       );
       if (!UserData) {
-        res.status(404).json({ message: 'Error! No user found with this id!' });
-        return;
+        return res.status(404).json({ message: 'Error! No user found with this id!' });
       }
-      res.json(UserData);
+      // If the thought was successfully deleted, send a 200 status with a success message.
+      res.status(200).json({ message: 'Success! This thought was deleted.' });
     } catch (err) {
       res.json(err);
     }
   },
+
 
   // adds a reaction
   async addReaction({ params, body }, res) {
@@ -116,7 +117,11 @@ const thoughtController = {
         { $pull: { reactions: { reactionId: params.reactionId } } }, //pull operator to remove an element from the reactions array
         { runValidators: true, new: true }
       );
-      res.json(UserData);
+      if (!UserData) {
+        return res.status(404).json({ message: 'Error! No thought with this id!' });
+      }
+      // If the reaction was successfully deleted, send a 200 status with a success message.
+      res.status(200).json({ message: 'Success! This reaction was deleted.' });
     } catch (err) {
       res.json(err);
     }
