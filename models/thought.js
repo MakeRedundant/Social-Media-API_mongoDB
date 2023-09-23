@@ -8,7 +8,7 @@ const thoughtSchema = new Schema(
     // Thought text field
     thoughtText: {
       type: String,
-      required: 'Error! Thought is Required',
+      required: true,
       minlength: 1,
       maxlength: 280,
     },

@@ -9,7 +9,7 @@ const {
   removeReactionByID
 } = require('../../controllers/thoughtsControllers');
 
-// const { route } = require('./user-routes');
+const { route } = require('./userRoutes');
 
 // Route for retrieving all thoughts
 // /api/thoughts
