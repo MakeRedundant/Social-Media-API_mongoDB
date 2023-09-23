@@ -3,14 +3,14 @@ const dateFormat = require('../utils/dateFormats');
 const ReactionSchema = require('./reaction');
 
 // Defines the Thought schema
-const ThoughtSchema = new Schema(
+const thoughtSchema = new Schema(
   {
     // Thought text field
     thoughtText: {
       type: String,
       required: 'Error! Thought is Required',
       minlength: 1,
-      maxlength: 200,
+      maxlength: 280,
     },
     // Creation timestamp field
     createdOn: {
@@ -46,6 +46,6 @@ thoughtSchema.virtual('reactionsCounter').get(function () {
   return this.reactions.length;
 });
 
-const Thought = model('Thought', ThoughtSchema);
+const Thought = model('Thought', thoughtSchema);
 
 module.exports = Thought;
